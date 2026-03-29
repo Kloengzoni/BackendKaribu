@@ -2,10 +2,11 @@
   "name": "tholad-group-site",
   "version": "1.0.0",
   "description": "Site web Tholad Group",
+  "main": "server.js",
   "scripts": {
-    "start": "serve -s . -l $PORT"
+    "start": "node server.js"
   },
   "dependencies": {
-    "serve": "^14.2.0"
+    "express": "^4.18.2"
   }
 }
