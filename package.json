@@ -1,0 +1,11 @@
+{
+  "name": "tholad-group-site",
+  "version": "1.0.0",
+  "description": "Site web Tholad Group",
+  "scripts": {
+    "start": "npx serve . -p ${PORT:-3000}"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
