@@ -831,7 +831,7 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 /* CHAT WINDOW */
 #chat-window {
   position:fixed; bottom:100px; right:28px; z-index:9997;
-  width:380px; height:580px; max-height:90vh;
+  width:380px; height:520px; max-height:calc(100vh - 120px);
   background:var(--white); border-radius:16px;
   box-shadow:0 20px 60px rgba(26,15,7,0.22);
   display:flex; flex-direction:column;
