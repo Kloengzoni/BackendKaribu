@@ -24,7 +24,6 @@
   --border:      rgba(200,150,42,0.18);
   --shadow:      0 6px 32px rgba(26,15,7,0.12);
 }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Jost', sans-serif; background: var(--cream); color: var(--text); overflow-x: hidden; }
@@ -236,6 +235,10 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
 .footer-bottom { padding:24px 0; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
 .footer-copy { font-size:0.75rem; color:rgba(255,255,255,0.3); }
 .footer-copy span { color:var(--gold); }
+.footer-dev { text-align:center; padding:14px 0 20px; border-top:1px solid rgba(200,150,42,0.08); font-size:0.72rem;
+  color:rgba(255,255,255,0.25); letter-spacing:1.5px; }
+.footer-dev span.heart { color:var(--gold); }
+.footer-dev span.name { color:rgba(255,255,255,0.45); font-weight:600; }
 
 /* RESPONSIVE */
 @media (max-width:900px) {
@@ -279,12 +282,12 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="topbar-left">
-    <span><span class="topbar-icon">📍</span>Pointe-Noire, Congo</span>
-    <span><span class="topbar-icon">🕐</span>Lun–Sam : 12h–23h &nbsp;|&nbsp; Dim : 12h–22h</span>
+    <span><span class="topbar-icon">📍</span>Brazzaville, Congo</span>
+    <span><span class="topbar-icon">🕐</span>Lun–Sam : 12h–7h &nbsp;|&nbsp; Dim : 12h–00h</span>
   </div>
   <div class="topbar-right">
-    <a href="tel:+242000000000"><span class="topbar-icon">📞</span>+242 00 000 0000</a>
-    <a href="/cdn-cgi/l/email-protection#afccc0c1dbceccdbefc4ceddc6cdda81ccc8"><span class="topbar-icon">✉️</span><span class="__cf_email__" data-cfemail="f695999882979582b69d97849f9483d89591">[email&#160;protected]</span></a>
+    <a href="tel:+24206711919"><span class="topbar-icon">📞</span>+242 06 711 91 91</a>
+    <a href="mailto:lekaribubzv@gmail.com"><span class="topbar-icon">✉️</span>lekaribubzv@gmail.com</a>
   </div>
 </div>
 
@@ -320,13 +323,12 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
       </div>
     </div>
   </div>
-
   <div class="slide">
     <div class="slide-bg" style="background-image:url('images/img3.jpg')"></div>
     <div class="slide-overlay"></div>
     <div class="slide-content">
       <div class="slide-tag">Lounge Bar & Restaurant</div>
-      <h1 class="slide-title">Un lieu <span class="hl">unique</span> à Pointe-Noire</h1>
+      <h1 class="slide-title">Un lieu <span class="hl">unique</span> à Brazzaville</h1>
       <p class="slide-desc">Murales africaines, cocktails raffinés et gastronomie du continent dans un espace lounge d'exception.</p>
       <div class="slide-btns">
         <a href="#about" class="btn-gold">Découvrir</a>
@@ -334,7 +336,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
       </div>
     </div>
   </div>
-
   <div class="slide">
     <div class="slide-bg" style="background-image:url('images/img6.jpg')"></div>
     <div class="slide-overlay"></div>
@@ -348,7 +349,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
       </div>
     </div>
   </div>
-
   <div class="slider-nav">
     <div class="slider-dots">
       <div class="dot active" onclick="goSlide(0)"></div>
@@ -356,8 +356,8 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
       <div class="dot" onclick="goSlide(2)"></div>
     </div>
     <div class="slider-arrows">
-      <button class="arrow-btn" onclick="prevSlide()">‹</button>
-      <button class="arrow-btn" onclick="nextSlide()">›</button>
+      <button class="arrow-btn" onclick="prevSlide()">&#8249;</button>
+      <button class="arrow-btn" onclick="nextSlide()">&#8250;</button>
     </div>
   </div>
 </div>
@@ -380,7 +380,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
     </div>
     <a href="#contact" class="link-all">Réserver une table →</a>
   </div>
-
   <div class="menu-grid">
     <div class="menu-card reveal">
       <div style="overflow:hidden"><img class="menu-card-img" src="images/img5.jpg" alt="Steak sauce poivre"></div>
@@ -391,7 +390,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
         <div class="menu-card-footer"><div class="menu-card-price">Sur carte</div><div class="menu-tag">Grillades</div></div>
       </div>
     </div>
-
     <div class="menu-card reveal d1">
       <div style="overflow:hidden"><img class="menu-card-img" src="images/img7.jpg" alt="Viande braisée"></div>
       <div class="menu-card-badge">Chef's Choice</div>
@@ -401,7 +399,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
         <div class="menu-card-footer"><div class="menu-card-price">Sur carte</div><div class="menu-tag">Spécialité</div></div>
       </div>
     </div>
-
     <div class="menu-card reveal d2">
       <div style="overflow:hidden"><img class="menu-card-img" src="images/img8.jpg" alt="Volaille"></div>
       <div class="menu-card-body">
@@ -410,7 +407,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
         <div class="menu-card-footer"><div class="menu-card-price">Sur carte</div><div class="menu-tag">Volaille</div></div>
       </div>
     </div>
-
     <div class="menu-card reveal">
       <div style="overflow:hidden"><img class="menu-card-img" src="images/img6.jpg" alt="Bœuf semoule"></div>
       <div class="menu-card-badge">Tradition</div>
@@ -420,7 +416,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
         <div class="menu-card-footer"><div class="menu-card-price">Sur carte</div><div class="menu-tag">Plat du jour</div></div>
       </div>
     </div>
-
     <div class="menu-card reveal d1">
       <div style="overflow:hidden"><img class="menu-card-img" src="images/img9.jpg" alt="Mouton semoule"></div>
       <div class="menu-card-body">
@@ -429,7 +424,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
         <div class="menu-card-footer"><div class="menu-card-price">Sur carte</div><div class="menu-tag">Agneau</div></div>
       </div>
     </div>
-
     <div class="menu-card menu-card-dark reveal d2">
       <div style="font-size:2.5rem;margin-bottom:16px;">🍷</div>
       <div style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--gold);margin-bottom:10px;">Notre Cave à Vins</div>
@@ -564,8 +558,8 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
     <div class="csub">Réservez votre table dès maintenant — nous vous accueillons du lundi au samedi.</div>
   </div>
   <div class="cta-actions">
-    <a href="tel:+242000000000" class="btn-dark">📞 Nous appeler</a>
-    <a href="https://wa.me/242000000000" class="btn-outline-dark">💬 WhatsApp</a>
+    <a href="tel:+24206711919" class="btn-dark">📞 Nous appeler</a>
+    <a href="https://wa.me/24206711919" class="btn-outline-dark">💬 WhatsApp</a>
   </div>
 </div>
 
@@ -577,7 +571,7 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
         <img src="images/logo.jpg" alt="Karibu">
         <span class="footer-logo-name">KARIBU</span>
       </div>
-      <p class="footer-desc">South African Dining & Lounge Bar à Pointe-Noire. Une expérience gastronomique africaine authentique dans un cadre artistique et chaleureux.</p>
+      <p class="footer-desc">South African Dining & Lounge Bar à Brazzaville. Une expérience gastronomique africaine authentique dans un cadre artistique et chaleureux.</p>
       <div class="socials">
         <a class="social-btn" href="#">in</a>
         <a class="social-btn" href="#">f</a>
@@ -585,7 +579,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
         <a class="social-btn" href="#">▶</a>
       </div>
     </div>
-
     <div class="f-col">
       <h4>La Carte</h4>
       <ul>
@@ -596,7 +589,6 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
         <li><a href="#">Vins & Cocktails</a></li>
       </ul>
     </div>
-
     <div class="f-col">
       <h4>Le Restaurant</h4>
       <ul>
@@ -607,39 +599,32 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
         <li><a href="#">Réservation</a></li>
       </ul>
     </div>
-
     <div class="f-col">
       <h4>Contact</h4>
-      <div class="f-contact-item"><span class="f-contact-icon">📍</span><span class="f-contact-text">Pointe-Noire, Congo<br>Centre-ville</span></div>
-      <div class="f-contact-item"><span class="f-contact-icon">📞</span><span class="f-contact-text">+242 00 000 0000</span></div>
-      <div class="f-contact-item"><span class="f-contact-icon">✉️</span><span class="f-contact-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a8cbc7c6dcc9cbdce8c3c9dac1cadd86cbcf">[email&#160;protected]</a></span></div>
-      <div class="f-contact-item"><span class="f-contact-icon">🕐</span><span class="f-contact-text">Lun–Sam : 12h–23h<br>Dim : 12h–22h</span></div>
+      <div class="f-contact-item"><span class="f-contact-icon">📍</span><span class="f-contact-text">Brazzaville, Congo<br>Centre-ville</span></div>
+      <div class="f-contact-item"><span class="f-contact-icon">📞</span><span class="f-contact-text">+242 06 711 91 91</span></div>
+      <div class="f-contact-item"><span class="f-contact-icon">✉️</span><span class="f-contact-text"><a href="mailto:lekaribubzv@gmail.com" style="color:rgba(255,255,255,0.5);text-decoration:none;">lekaribubzv@gmail.com</a></span></div>
+      <div class="f-contact-item"><span class="f-contact-icon">🕐</span><span class="f-contact-text">Lun–Sam : 12h–7h<br>Dim : 12h–00h</span></div>
     </div>
   </div>
-
   <div class="footer-bottom">
     <div class="footer-copy">© 2025 <span>Karibu</span> – South African Dining. Tous droits réservés.</div>
     <div class="footer-copy">Politique de confidentialité &nbsp;·&nbsp; Mentions légales</div>
   </div>
+  <div class="footer-dev">
+    Développé avec <span class="heart">♥</span> par <span class="name">Basile Marius Ngassaki Zoni</span>
+  </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// Fix : ne pas bloquer sur le chargement des vidéos
-// On masque le preloader dès que le DOM est prêt (max 2.5s)
+<script>
 const hidePreloader = () => {
   document.getElementById('preloader').classList.add('done');
 };
-
-// Masquer après 2.5s max (même si les vidéos ne sont pas chargées)
 const preloaderTimeout = setTimeout(hidePreloader, 2500);
-
-// Ou dès que les images sont chargées (sans attendre les vidéos)
 window.addEventListener('load', () => {
   clearTimeout(preloaderTimeout);
   setTimeout(hidePreloader, 800);
 });
-
-// Sécurité absolue : masquer après 4s quoi qu'il arrive
 setTimeout(hidePreloader, 4000);
 
 let current = 0;
