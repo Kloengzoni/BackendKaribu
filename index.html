@@ -666,4 +666,15 @@ document.getElementById('hamburger').addEventListener('click', () => {
   const isOpen = menu.style.display === 'flex';
   Object.assign(menu.style, {
     display: isOpen ? 'none' : 'flex', flexDirection:'column', position:'absolute',
-    top:'72px', left:'0', right:'0', backgroun
+    top:'72px', left:'0', right:'0', background:'rgba(250,246,238,0.98)',
+    padding:'16px 5vw', boxShadow:'0 8px 24px rgba(26,15,7,0.1)', zIndex:'800'
+  });
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('up'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
