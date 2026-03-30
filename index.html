@@ -486,7 +486,7 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
   <p class="sec-sub">Plongez dans l'ambiance de notre restaurant lounge bar à travers ces instants captés sur le vif.</p>
   <div class="video-grid">
     <div class="video-wrap reveal">
-      <video autoplay muted loop playsinline>
+      <video autoplay muted loop playsinline preload="none">
         <source src="images/video1.mp4" type="video/mp4">
       </video>
       <div class="video-label">
@@ -495,7 +495,7 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
       </div>
     </div>
     <div class="video-wrap reveal d1">
-      <video autoplay muted loop playsinline>
+      <video autoplay muted loop playsinline preload="none">
         <source src="images/video2.mp4" type="video/mp4">
       </video>
       <div class="video-label">
@@ -624,9 +624,23 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Fix : ne pas bloquer sur le chargement des vidéos
+// On masque le preloader dès que le DOM est prêt (max 2.5s)
+const hidePreloader = () => {
+  document.getElementById('preloader').classList.add('done');
+};
+
+// Masquer après 2.5s max (même si les vidéos ne sont pas chargées)
+const preloaderTimeout = setTimeout(hidePreloader, 2500);
+
+// Ou dès que les images sont chargées (sans attendre les vidéos)
 window.addEventListener('load', () => {
-  setTimeout(() => { document.getElementById('preloader').classList.add('done'); }, 2000);
+  clearTimeout(preloaderTimeout);
+  setTimeout(hidePreloader, 800);
 });
+
+// Sécurité absolue : masquer après 4s quoi qu'il arrive
+setTimeout(hidePreloader, 4000);
 
 let current = 0;
 const slides = document.querySelectorAll('.slide');
