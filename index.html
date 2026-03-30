@@ -240,6 +240,10 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
 .footer-dev span.heart { color:var(--gold); }
 .footer-dev span.name { color:rgba(255,255,255,0.45); font-weight:600; }
 
+
+@media (max-width:900px) {
+  #owners > div { grid-template-columns:1fr; gap:50px; }
+}
 /* RESPONSIVE */
 @media (max-width:900px) {
   .menu-grid { grid-template-columns:1fr 1fr; }
@@ -303,6 +307,7 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
     <li><a class="nav-link" href="#about">L'Ambiance</a></li>
     <li><a class="nav-link" href="#gallery">Galerie</a></li>
     <li><a class="nav-link" href="#videos">Vidéos</a></li>
+    <li><a class="nav-link" href="#owners">Les Fondateurs</a></li>
     <li><a class="nav-link nav-cta-btn" href="#contact">Réserver</a></li>
   </ul>
   <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
@@ -547,6 +552,53 @@ footer { background:var(--dark); padding:70px 5vw 0; color:rgba(255,255,255,0.55
     <div class="atm-quote">
       <div class="atm-quote-text">"Ici, chaque assiette dit : Karibu."</div>
       <div class="atm-quote-author">— L'esprit Karibu</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROPRIÉTAIRES -->
+<section id="owners" style="background:var(--cream2); padding:90px 5vw;">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center;">
+    <div class="reveal">
+      <div style="position:relative; display:inline-block; width:100%;">
+        <img src="images/owners.jpg" alt="Les propriétaires du Karibu"
+          style="width:100%; max-width:480px; object-fit:cover; border-radius:3px;
+          box-shadow:0 24px 60px rgba(26,15,7,0.22); border:4px solid var(--gold); display:block;">
+        <div style="position:absolute; bottom:-18px; right:0; background:var(--gold);
+          color:var(--dark); padding:14px 22px; font-family:'Playfair Display',serif;
+          font-size:0.82rem; font-weight:700; letter-spacing:2px; text-transform:uppercase;
+          box-shadow:0 8px 24px rgba(200,150,42,0.35);">
+          Les Fondateurs
+        </div>
+      </div>
+    </div>
+    <div class="reveal d1">
+      <div class="sec-tag">Vision &amp; Passion</div>
+      <h2 class="sec-title">Derrière <em>Karibu</em>,<br>une histoire de cœur</h2>
+      <p class="sec-sub" style="margin-bottom:24px;">
+        Karibu est né d'une passion commune pour la gastronomie africaine et d'une vision claire :
+        offrir à Brazzaville un espace où la cuisine du continent est célébrée avec élégance, chaleur et authenticité.
+      </p>
+      <p class="sec-sub" style="margin-bottom:36px;">
+        Nos fondateurs ont voulu créer bien plus qu'un restaurant — un lieu de vie, d'art et de culture,
+        où chaque client se sent accueilli comme un membre de la famille.
+        <em style="color:var(--gold); font-style:normal; font-weight:600;">Karibu</em> — bienvenue.
+      </p>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 18px; background:var(--white); border-left:3px solid var(--gold); box-shadow:var(--shadow);">
+          <span style="font-size:1.3rem; flex-shrink:0;">🍽️</span>
+          <div><div style="font-weight:700; font-size:0.88rem; margin-bottom:3px;">Gastronomie africaine d'exception</div><div style="font-size:0.79rem; color:var(--text-light);">Des recettes authentiques sublimées par une touche moderne et créative.</div></div>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 18px; background:var(--white); border-left:3px solid var(--gold); box-shadow:var(--shadow);">
+          <span style="font-size:1.3rem; flex-shrink:0;">🎨</span>
+          <div><div style="font-weight:700; font-size:0.88rem; margin-bottom:3px;">Un cadre artistique unique</div><div style="font-size:0.79rem; color:var(--text-light);">Art mural, portraits d'icônes africaines — un lieu vivant et inspirant.</div></div>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 18px; background:var(--white); border-left:3px solid var(--gold); box-shadow:var(--shadow);">
+          <span style="font-size:1.3rem; flex-shrink:0;">🤝</span>
+          <div><div style="font-weight:700; font-size:0.88rem; margin-bottom:3px;">L'hospitalité au cœur</div><div style="font-size:0.79rem; color:var(--text-light);">Chaque client est reçu avec la générosité et la chaleur congolaise.</div></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
