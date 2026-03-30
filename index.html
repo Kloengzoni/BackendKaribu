@@ -1077,4 +1077,16 @@ window.sendMessage = async function() {
 
     removeTyping();
     addMessage(reply, 'bot');
-    chatHistory.push({ role: 'assistant', content: 
+    chatHistory.push({ role: 'assistant', content: reply });
+
+  } catch (err) {
+    removeTyping();
+    addMessage("Une erreur s'est produite. Appelez-nous au +242 06 711 91 91 🙏", 'bot');
+    console.error(err);
+  } finally {
+    isTyping = false;
+  }
+}
+</script>
+</body>
+</html>
